@@ -1,5 +1,4 @@
 <template>
-
   <div class="container bg-slate-800 rounded-lg max-w-[800px] m-2">
     <div class="container flex justify-end text-white p-2 gap-2 max-w-[800px]">
       <button
@@ -13,30 +12,31 @@
       ></button>
     </div>
     <div
-      class="container bg-slate-900 h-80 rounded-bl-lg rounded-br-lg text-white p-1 max-w-[800px] font-mono"
+      class="container bg-slate-900 min-h-[300px] rounded-bl-lg rounded-br-lg text-white p-1 max-w-[800px] font-mono"
     >
-		<highlight-code lang="javascript" inline>addEventListener('load', () => {
-  const code = document.querySelector('#code');
-  const worker = new Worker('worker.js');
-  worker.onmessage = (event) => { code.innerHTML = event.data; }
-  worker.postMessage(code.textContent);
-});;</highlight-code>
+      <pre v-highlightjs><code  class="javascript">{{this.printContent}}</code></pre>
     </div>
   </div>
-  
 </template>
 
 <script>
-
 export default {
   name: "OSWindow",
-  components: {
-
+  data() {
+    return{
+      testvar: 1
+    }
   },
+  components: {},
   props: {
     windowMinimise: Boolean,
-    printContent: Boolean,
+    printContent: String,
+  },
+  methods: {
+
+  },
+  mounted() {
+
   },
 };
 </script>
-
