@@ -14,7 +14,18 @@
     <div
       class="container bg-slate-900 min-h-[300px] rounded-bl-lg rounded-br-lg text-white p-1 max-w-[800px] font-mono"
     >
-      <pre v-highlightjs><code  class="javascript">{{this.printContent}}</code></pre>
+      <pre
+        v-highlightjs
+      ><code class="javascript">{{this.printContent}}</code></pre>
+
+      <pre v-if="introDone"><code>  links = {
+   <span class="text-purple-400">Reddit: <a class="text-pink-400 underline" href="https://reddit.com/user/Claraa_lilyy" target="_blank">https://reddit.com/user/claraa_lilyy</a></span> , 
+   <span class="text-purple-400">Github: <a class="text-pink-400 underline" href="https://github.com/claramoon" target="_blank">https://github.com/claramoon</a></span> ,
+   <span class="text-purple-400">Twitter: <a class="text-pink-400 underline" href="https://twitter.com/lilmaxclara" target="_blank">https://twitter.com/lilmaxclara</a></span> ,
+   <span class="text-purple-400">OnlyFans: <a class="text-pink-400 underline" href="https://onlyfans.com/claramoonx" target="_blank">https://onlyfans.com/claramoonx</a></span> ,
+   <span class="text-purple-400">Fansly: <a class="text-pink-400 underline" href="https://fansly.com/ClaraMoon" target="_blank">https://fansly.com/claramoon</a></span>
+   }
+        </code></pre>
     </div>
   </div>
 </template>
@@ -23,20 +34,15 @@
 export default {
   name: "OSWindow",
   data() {
-    return{
-      testvar: 1
-    }
+    return {
+    };
   },
   components: {},
   props: {
-    windowMinimise: Boolean,
+    introDone: Boolean,
     printContent: String,
   },
-  methods: {
-
-  },
-  mounted() {
-
-  },
+  methods: {},
+  mounted() {},
 };
 </script>

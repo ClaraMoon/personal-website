@@ -3,7 +3,7 @@
   <div class="flex flex-col justify-center items-center">
   <div class="text-sm text-green-500 font-mono mb-4"><pre>
 </pre></div>    
-  <OSWindow :printContent="windowPrint"></OSWindow>
+  <OSWindow :introDone ="donePrint" :printContent="windowPrint"></OSWindow>
 
   </div>
 </div>
@@ -18,7 +18,8 @@ export default {
   name: 'App',
   data (){
     return{
-      windowPrint : ""
+      windowPrint : '',
+      donePrint : false,
     }
   },
   components: {
@@ -27,18 +28,20 @@ export default {
   methods:{
     
     async slowPrint(content){
+
       const timer = ms => new Promise(res => setTimeout(res, ms))
 
       for (let index = 0; index < content.length; index++) {
         const element = content[index];
         this.windowPrint += element
-         await timer(90);
+         await timer(10);
       }
     }
   },
   async mounted (){
-   await this.slowPrint("//Hello my name is Clara Moon \n")
-   //object with links and other relevant infos
+  await this.slowPrint("//Hello my name is Clara Moon (づ｡◕‿‿◕｡)づ\n")
+  await this.slowPrint("//I'm a university student studying CompSci and CyberSec in Melbourne, Australia\n")
+  this.donePrint = true
   }
 
 }
