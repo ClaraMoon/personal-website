@@ -34,7 +34,7 @@ export default {
       for (let index = 0; index < content.length; index++) {
         const element = content[index];
         this.windowPrint += element
-         await timer(10);
+         await timer(50);
       }
     }
   },

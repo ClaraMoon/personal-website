@@ -18,31 +18,42 @@
         v-highlightjs
       ><code class="javascript">{{this.printContent}}</code></pre>
 
-      <pre v-if="introDone"><code>  links = {
+      <span class="text-[#57a64a] italic"><colorText :printSpeed=50 indent=1 :printStatus="printStatus1" printableText="//Hello my name is Clara Moon (づ｡◕‿‿◕｡)づ"></colorText></span>
+
+      <pre v-if="introDone"><code>
+        
+links = {
    <span class="text-purple-400">Reddit: <a class="text-pink-400 underline" href="https://reddit.com/user/Claraa_lilyy" target="_blank">https://reddit.com/user/claraa_lilyy</a></span> , 
    <span class="text-purple-400">Github: <a class="text-pink-400 underline" href="https://github.com/claramoon" target="_blank">https://github.com/claramoon</a></span> ,
    <span class="text-purple-400">Twitter: <a class="text-pink-400 underline" href="https://twitter.com/lilmaxclara" target="_blank">https://twitter.com/lilmaxclara</a></span> ,
    <span class="text-purple-400">OnlyFans: <a class="text-pink-400 underline" href="https://onlyfans.com/claramoonx" target="_blank">https://onlyfans.com/claramoonx</a></span> ,
    <span class="text-purple-400">Fansly: <a class="text-pink-400 underline" href="https://fansly.com/ClaraMoon" target="_blank">https://fansly.com/claramoon</a></span>
    }
+   <span class="text-purple-400"><colorText :printSpeed=50 :printStatus="printStatus1" printableText="Test thing"></colorText></span>
         </code></pre>
     </div>
   </div>
 </template>
 
 <script>
+import colorText from './colorText'
 export default {
   name: "OSWindow",
   data() {
     return {
+      printStatus1 : false,
     };
   },
-  components: {},
+  components: {
+    colorText
+  },
   props: {
     introDone: Boolean,
     printContent: String,
   },
   methods: {},
-  mounted() {},
+  mounted() {
+    
+  },
 };
 </script>
