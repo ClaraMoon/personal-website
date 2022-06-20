@@ -1,14 +1,18 @@
 <template>
   <div class="bg-slate-700 h-screen p-2">
+    <titleCard></titleCard>
     <div class="flex flex-col justify-center items-center">
       <div class="text-sm text-green-500 font-mono mb-4"><pre></pre></div>
       <aboutIntro></aboutIntro>
     </div>
+    <menuBar></menuBar>
   </div>
 </template>
 
 <script>
 import aboutIntro from "./components/aboutIntro";
+import titleCard from "./components/titleCard";
+import menuBar from "./components/menuBar";
 import "./index.css";
 
 export default {
@@ -21,6 +25,8 @@ export default {
   },
   components: {
     aboutIntro,
+    titleCard,
+    menuBar,
   },
   methods: {
     async slowPrint(content) {

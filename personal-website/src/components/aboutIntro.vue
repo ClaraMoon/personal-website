@@ -1,6 +1,8 @@
 <template>
-  <div class="container bg-slate-800 rounded-lg max-w-[800px] m-2 overflow-x-auto">
-    <div class="container flex justify-end text-white p-2 gap-2 max-w-[800px]">
+  <div v-if="displayAbout" class="container bg-slate-800 rounded-lg max-w-[800px] m-2 overflow-x-auto">
+    <div class="flex flex-row">
+      <div class="container flex justify-start text-white p-2 pl-4 max-w-[800px] italic">About</div>
+      <div class="container flex justify-end text-white p-2 gap-2 max-w-[800px]">
       <button
         class="rounded-full w-5 h-5 bg-[#00CA4E] hover:bg-[#33D571]"
       ></button>
@@ -8,8 +10,10 @@
         class="rounded-full w-5 h-5 bg-[#FFBD44] hover:bg-[#FFCA69]"
       ></button>
       <button
+        @click="displayAbout = false"
         class="rounded-full w-5 h-5 bg-[#FF605C] hover:bg-[#FF807D]"
       ></button>
+    </div>
     </div>
     <div
       class="container bg-slate-900 min-h-[300px] rounded-bl-lg rounded-br-lg text-white p-1 max-w-[800px] font-mono"
@@ -149,6 +153,7 @@ export default {
       claraLine8: false,
       claraLine9: false,
       claraLine10: false,
+      displayAbout: true,
     };
   },
   components: {
