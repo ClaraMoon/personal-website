@@ -20,7 +20,7 @@ export default {
     printSpeed: Number,
     printableText: String,
     printStatus: Boolean,
-    indent: Number
+    ID: String
   },
   methods:{
     async slowPrint(content){
@@ -32,6 +32,7 @@ export default {
         this.windowPrint += element
          await timer(this.printSpeed);
       }
+      this.$emit('printDone')
     }
   },
   watch: {
@@ -41,6 +42,11 @@ export default {
       },
     },
   },
+  mounted(){
+    if (this.printStatus) {
+      this.slowPrint(this.printableText)
+    }
+  }
 }
 </script>
 
