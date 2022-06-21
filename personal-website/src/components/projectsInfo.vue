@@ -41,13 +41,13 @@
           :printSpeed="50"
           @printDone="claraLine4 = true"
           :printStatus="claraLine3"
-          printableText="Website: "
+          printableText="Github: "
         ></colorText
         ><a v-if="claraLine4"
           class="text-pink-400 underline"
-          href="https://github.com/ClaraMoon/personal-website"
+          href="https://github.com/ClaraMoon/site"
           target="_blank"
-          >github.com/ClaraMoon/personal-website</a
+          >github.com/ClaraMoon/site</a
         >
       </div>
 
