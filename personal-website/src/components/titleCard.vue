@@ -1,7 +1,9 @@
 <template>
   <div class="flex justify-center">
     <div>
-      <img src="../assets/Shiina_Murakami_Vuejs_Up_And_Running.png" alt="Clara Moon title" />
+      <a href=".">
+        <img src="../assets/Shiina_Murakami_Vuejs_Up_And_Running.png" alt="Clara Moon title" />
+        </a>
     </div>
   </div>
 </template>

@@ -1,16 +1,17 @@
 <template>
-  <div class="bg-slate-700 h-screen p-2">
+  <div class="p-2">
     <titleCard></titleCard>
     <div class="flex flex-col justify-center items-center">
-      <div class="text-sm text-green-500 font-mono mb-4"><pre></pre></div>
-      <aboutIntro></aboutIntro>
+      <aboutIntro @closed="displayIntro = false" v-if="displayIntro"></aboutIntro>
+      <projectsInfo @closed="displayProject = false" v-if="displayProject"></projectsInfo>
     </div>
-    <menuBar></menuBar>
+    <menuBar @toggleIntro="displayIntro = !displayIntro" @toggleProject="displayProject = !displayProject" :projectButton="displayProject" :infoButton="displayIntro"></menuBar>
   </div>
 </template>
 
 <script>
 import aboutIntro from "./components/aboutIntro";
+import projectsInfo from "./components/projectsInfo";
 import titleCard from "./components/titleCard";
 import menuBar from "./components/menuBar";
 import "./index.css";
@@ -19,16 +20,18 @@ export default {
   name: "App",
   data() {
     return {
-      windowPrint: "",
-      donePrint: false,
+      displayIntro: true,
+      displayProject: false,
     };
   },
   components: {
     aboutIntro,
     titleCard,
     menuBar,
+    projectsInfo
   },
   methods: {
+   
     async slowPrint(content) {
       const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -40,11 +43,7 @@ export default {
     },
   },
   async mounted() {
-    await this.slowPrint("//Hello my name is Clara Moon (づ｡◕‿‿◕｡)づ\n");
-    await this.slowPrint(
-      "//I'm a university student studying CompSci and CyberSec in Melbourne, Australia\n"
-    );
-    this.donePrint = true;
+
   },
 };
 </script>
