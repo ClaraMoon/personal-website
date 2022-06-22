@@ -37,7 +37,7 @@
           :printSpeed="20"
           @printDone="claraLine4 = true"
           :printStatus="claraLine3"
-          printableText="//I'm a university student studying CompSci and CyberSec in Melbourne, Australia"
+          printableText="//I'm a university student studying CompSci and CyberSec in Australia"
         ></colorText>
       </div>
 
@@ -140,7 +140,7 @@
 <script>
 import colorText from "./colorText";
 export default {
-  name: "OSWindow",
+  name: "aboutIntro",
   data() {
     return {
       claraLine1: true,
@@ -158,17 +158,6 @@ export default {
   },
   components: {
     colorText,
-  },
-  props: {
-    printContent: String,
-  },
-  methods: {
-    close(){
-      console.log("done");
-    }
-  },
-  async mounted() {
-    
   },
 };
 </script>

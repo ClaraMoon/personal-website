@@ -79,16 +79,5 @@ export default {
   components: {
     colorText,
   },
-  props: {
-    printContent: String,
-  },
-  methods: {
-    close(){
-      console.log("done");
-    }
-  },
-  async mounted() {
-    
-  },
 };
 </script>

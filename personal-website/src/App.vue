@@ -30,22 +30,5 @@ export default {
     menuBar,
     projectsInfo
   },
-  methods: {
-   
-    async slowPrint(content) {
-      const timer = (ms) => new Promise((res) => setTimeout(res, ms));
-
-      for (let index = 0; index < content.length; index++) {
-        const element = content[index];
-        this.windowPrint += element;
-        await timer(50);
-      }
-    },
-  },
-  async mounted() {
-
-  },
 };
 </script>
-
-<style></style>

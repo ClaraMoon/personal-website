@@ -16,8 +16,10 @@
           </div>
           <img @click="this.$emit('toggleProject')" class="h-20 w-20 cursor-pointer" src="../assets/VS_Code.webp" alt="Project Information button">
         </div>
-        <div class="flex flex-col justify-center">
-          <img @click="youtube" class="h-20 w-20 cursor-pointer" src="../assets/low_res_youtube.webp" alt="Youtube button">
+        <div class="flex flex-col justify-center"> 
+          <a href="https://www.youtube.com/watch?v=kZwhNFOn4ik">
+            <img class="h-20 w-20 cursor-pointer" src="../assets/low_res_youtube.webp" alt="Youtube button">
+          </a>
         </div>
       </div>
     </div>
@@ -29,18 +31,10 @@
 
 export default {
   name: 'menuBar',
-  components: {
-  },
   props: {
     infoButton: Boolean,
     projectButton: Boolean,
   },
-  methods:{
-    youtube(){
-      window.open("https://www.youtube.com/watch?v=kZwhNFOn4ik")
-    }
-  
-  }
 }
 </script>
 

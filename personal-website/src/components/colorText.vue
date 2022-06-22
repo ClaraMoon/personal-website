@@ -9,8 +9,6 @@
 
 export default {
   name: 'colorText',
-  components: {
-  },
   data (){
     return{
       windowPrint : '',
@@ -20,7 +18,6 @@ export default {
     printSpeed: Number,
     printableText: String,
     printStatus: Boolean,
-    ID: String
   },
   methods:{
     async slowPrint(content){
