@@ -85,6 +85,21 @@
           :printSpeed="50"
           @printDone="claraLine8 = true"
           :printStatus="claraLine7"
+          printableText="Insta:"
+        ></colorText
+        ><a v-if="claraLine8"
+          class="text-pink-400 underline"
+          href="https://www.instagram.com/lilmaxclara/"
+          target="_blank"
+          >instagram.com/lilmaxclara</a
+        >
+      </div>
+
+            <div class="text-purple-400 pl-6 flex flex-row">
+        <colorText class="pr-1"
+          :printSpeed="50"
+          @printDone="claraLine9 = true"
+          :printStatus="claraLine8"
           printableText="Twitter:"
         ></colorText
         ><a v-if="claraLine8"
@@ -95,11 +110,12 @@
         >
       </div>
 
+
       <div class="text-purple-400 pl-6 flex flex-row">
         <colorText class="pr-1"
-          @printDone="claraLine9 = true"
+          @printDone="claraLine10 = true"
           :printSpeed="50"
-          :printStatus="claraLine8"
+          :printStatus="claraLine9"
           printableText="OnlyFans:"
         ></colorText
         ><a v-if="claraLine9"
@@ -112,9 +128,9 @@
 
       <div class="text-purple-400 pl-6 flex flex-row">
         <colorText class="pr-1"
-        @printDone="claraLine10 = true"
+        @printDone="claraLine11 = true"
           :printSpeed="50"
-          :printStatus="claraLine9"
+          :printStatus="claraLine10"
           printableText="Fansly:"
         ></colorText
         ><a v-if="claraLine10"
@@ -128,7 +144,7 @@
       <div class="pl-3">
         <colorText
           :printSpeed="50"
-          :printStatus="claraLine10"
+          :printStatus="claraLine11"
           printableText="}"
         ></colorText>
       </div>
@@ -153,6 +169,7 @@ export default {
       claraLine8: false,
       claraLine9: false,
       claraLine10: false,
+      claraLine11: false,
       displayAbout: true,
     };
   },
