@@ -17,7 +17,7 @@
               toggle:
                 'flex w-12 h-4 rounded-full relative cursor-pointer transition items-center box-content border-2 text-xs leading-none',
               toggleOn:
-                'bg-green-500 border-green-500 justify-start text-white',
+                'bg-[#57a64a] border-[#57a64a] justify-start text-white',
               toggleOff:
                 'bg-gray-300 border-gray-300 justify-end text-gray-700',
               toggleOnDisabled:
@@ -39,6 +39,7 @@
       <div v-if="pepeToggle" class="absolute right-24 -top-[92px]">
         <img
           src="../assets/HyperPepeCut.webp"
+          rel="preload"
           height="127"
           width="100"
           alt="Happy Peepo"
@@ -70,7 +71,7 @@
           :printSpeed="20"
           :printStatus="claraLine1"
           @printDone="claraLine2 = true"
-          printableText="//Hello my name is Clara Moon"
+          printableText="//Hi my name is Clara"
         ></colorText>
         <colorText
           class="whitespace-nowrap pl-1"
