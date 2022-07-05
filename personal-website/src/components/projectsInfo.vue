@@ -41,7 +41,7 @@
           :printSpeed="50"
           @printDone="claraLine4 = true"
           :printStatus="claraLine3"
-          printableText="Github: "
+          printableText="Website: "
         ></colorText
         ><a v-if="claraLine4"
           class="text-pink-400 underline"
@@ -51,10 +51,25 @@
         >
       </div>
 
+            <div class="text-purple-400 pl-6 flex flex-row">
+        <colorText class="pr-1"
+          :printSpeed="50"
+          @printDone="claraLine5 = true"
+          :printStatus="claraLine4"
+          printableText="Web3: "
+        ></colorText
+        ><a v-if="claraLine5"
+          class="text-pink-400 underline"
+          href="https://github.com/ClaraMoon/million-dollar-mobile"
+          target="_blank"
+          >github.com/millionMobile</a
+        >
+      </div>
+
       <div class="pl-3">
         <colorText
           :printSpeed="50"
-          :printStatus="claraLine4"
+          :printStatus="claraLine5"
           printableText="}"
         ></colorText>
       </div>
@@ -73,6 +88,8 @@ export default {
       claraLine2: false,
       claraLine3: false,
       claraLine4: false,
+      claraLine5 : false,
+      claraLine6 : false,
       displayAbout: true,
     };
   },
