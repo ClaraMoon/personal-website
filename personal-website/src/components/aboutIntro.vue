@@ -36,7 +36,7 @@
         /></span>
       </div>
        <Transition>
-      <div v-if="pepeToggle" class="absolute right-24 -top-[92px]">
+      <div class="absolute right-24 -top-[92px]" v-show="pepeToggle">
         <img
           src="../assets/HyperPepeCut.webp"
           rel="preload"
