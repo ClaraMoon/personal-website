@@ -7,7 +7,7 @@
       <div
         class="container flex justify-start text-white p-2 pl-4 max-w-[800px] italic"
       >
-        About
+        <h2>About</h2>
         <span class="pl-5"
           ><Toggle
             v-model="pepeToggle"

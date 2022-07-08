@@ -2,7 +2,7 @@
   <div class="flex justify-center">
     <div>
       <a href=".">
-        <img width="600" height="315" src="../assets/Shiina_Murakami_Vuejs_Up_And_Running.webp" alt="Clara Moon title" />
+        <h1><img width="600" height="315" rel="preload" src="../assets/Shiina_Murakami_Vuejs_Up_And_Running.webp" alt="Clara Moon title" /></h1>
         </a>
     </div>
   </div>
