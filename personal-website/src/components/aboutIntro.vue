@@ -110,9 +110,9 @@
         ><a
           v-if="claraLine6"
           class="text-pink-400 underline"
-          href="https://onlyfans.com/claramoonx"
+          href="https://onlyfans.com/lilmaxclara"
           target="_blank"
-          >onlyfans.com/claramoonx</a
+          >onlyfans.com/lilmaxclara</a
         >
       </div>
 
@@ -127,9 +127,9 @@
         ><a
           v-if="claraLine7"
           class="text-pink-400 underline"
-          href="https://github.com/claramoon"
+          href="https://github.com/lilmaxclara"
           target="_blank"
-          >github.com/claramoon</a
+          >github.com/lilmaxclara</a
         >
       </div>
 

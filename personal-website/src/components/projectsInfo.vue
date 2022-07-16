@@ -45,9 +45,9 @@
         ></colorText
         ><a v-if="claraLine4"
           class="text-pink-400 underline"
-          href="https://github.com/ClaraMoon/site"
+          href="https://github.com/lilmaxclara/site"
           target="_blank"
-          >github.com/ClaraMoon/site</a
+          >github.com/lilmaxclara/site</a
         >
       </div>
 
@@ -60,7 +60,7 @@
         ></colorText
         ><a v-if="claraLine5"
           class="text-pink-400 underline"
-          href="https://github.com/ClaraMoon/million-dollar-mobile"
+          href="https://github.com/lilmaxclara/million-dollar-mobile"
           target="_blank"
           >github.com/millionMobile</a
         >
