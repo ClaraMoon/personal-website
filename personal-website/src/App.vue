@@ -2,7 +2,7 @@
   <div class="p-2">
     <titleCard></titleCard>
     <div class="flex flex-col justify-center items-center">
-      <aboutIntro @closed="displayIntro = false" v-if="displayIntro"></aboutIntro>
+      <aboutIntro :displayProject=this.displayProject @closed="displayIntro = false" v-if="displayIntro"></aboutIntro>
       <projectsInfo @closed="displayProject = false" v-if="displayProject"></projectsInfo>
     </div>
     <menuBar @toggleIntro="displayIntro = !displayIntro" @toggleProject="displayProject = !displayProject" :projectButton="displayProject" :infoButton="displayIntro"></menuBar>

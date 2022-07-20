@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="displayAbout"
-    class="container bg-slate-800 rounded-lg max-w-[800px] m-2 relative"
+   :class="{ 'container bg-slate-800 rounded-lg max-w-[800px] m-2 relative': displayProject, 'container bg-slate-800 rounded-lg max-w-[800px] m-2 relative mb-24': !displayProject }"
   >
     <div class="flex flex-row">
       <div
@@ -221,6 +221,9 @@ export default {
     colorText,
     Toggle,
   },
+  props:{
+    displayProject: Boolean
+  }
 };
 </script>
 
