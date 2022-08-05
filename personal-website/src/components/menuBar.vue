@@ -17,7 +17,7 @@
           <img @click="this.$emit('toggleProject')" class="h-20 w-20 cursor-pointer" src="../assets/VS_Code.webp" alt="Project Information button">
         </div>
         <div class="flex flex-col justify-center"> 
-          <a href="https://www.youtube.com/watch?v=kZwhNFOn4ik">
+          <a href="https://www.youtube.com/watch?v=VXmRHpX2cZI">
             <img class="h-20 w-20 cursor-pointer" src="../assets/low_res_youtube.webp" alt="Youtube button">
           </a>
         </div>
