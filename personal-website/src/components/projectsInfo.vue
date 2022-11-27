@@ -56,13 +56,13 @@
           :printSpeed="50"
           @printDone="claraLine5 = true"
           :printStatus="claraLine4"
-          printableText="Web3: "
+          printableText="Palette: "
         ></colorText
         ><a v-if="claraLine5"
           class="text-pink-400 underline"
-          href="https://github.com/lilmaxclara/million-dollar-mobile"
+          href="https://palette.wtf"
           target="_blank"
-          >github.com/millionMobile</a
+          >palette.wtf</a
         >
       </div>
 
