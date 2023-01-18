@@ -122,10 +122,27 @@
           :printSpeed="50"
           @printDone="claraLine7 = true"
           :printStatus="claraLine6"
-          printableText="Github:"
+          printableText="Censored OF:"
         ></colorText
         ><a
           v-if="claraLine7"
+          class="text-pink-400 underline"
+          href="https://onlyfans.com/moongoddessclara"
+          target="_blank"
+          >onlyfans.com/moongoddessclara</a
+        >
+      </div>
+
+      <div class="text-purple-400 pl-6 flex flex-row">
+        <colorText
+          class="pr-1"
+          :printSpeed="50"
+          @printDone="claraLine8 = true"
+          :printStatus="claraLine7"
+          printableText="Github:"
+        ></colorText
+        ><a
+          v-if="claraLine8"
           class="text-pink-400 underline"
           href="https://github.com/lilmaxclara"
           target="_blank"
@@ -137,12 +154,12 @@
         <colorText
           class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine8 = true"
-          :printStatus="claraLine7"
+          @printDone="claraLine9 = true"
+          :printStatus="claraLine8"
           printableText="Insta:"
         ></colorText
         ><a
-          v-if="claraLine8"
+          v-if="claraLine9"
           class="text-pink-400 underline"
           href="https://www.instagram.com/lilmaxclara/"
           target="_blank"
@@ -154,12 +171,12 @@
         <colorText
           class="pr-1"
           :printSpeed="50"
-          @printDone="claraLine9 = true"
-          :printStatus="claraLine8"
+          @printDone="claraLine10 = true"
+          :printStatus="claraLine9"
           printableText="Twitter:"
         ></colorText
         ><a
-          v-if="claraLine9"
+          v-if="claraLine10"
           class="text-pink-400 underline"
           href="https://twitter.com/lilmaxclara"
           target="_blank"
@@ -170,13 +187,13 @@
       <div class="text-purple-400 pl-6 flex flex-row">
         <colorText
           class="pr-1"
-          @printDone="claraLine10 = true"
+          @printDone="claraLine11 = true"
           :printSpeed="50"
-          :printStatus="claraLine9"
+          :printStatus="claraLine10"
           printableText="Reddit:"
         ></colorText
         ><a
-          v-if="claraLine10"
+          v-if="claraLine11"
           class="text-pink-400 underline"
           href="https://reddit.com/u/Claraa_lilyy"
           target="_blank"
@@ -187,7 +204,7 @@
       <div class="pl-3">
         <colorText
           :printSpeed="50"
-          :printStatus="claraLine10"
+          :printStatus="claraLine11"
           printableText="}"
         ></colorText>
       </div>
@@ -213,6 +230,7 @@ export default {
       claraLine9: false,
       claraLine10: false,
       claraLine11: false,
+      claraLine12: false,
       displayAbout: true,
       pepeToggle: false,
     };
